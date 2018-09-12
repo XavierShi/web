@@ -1,3 +1,5 @@
+const common = require('../common')
+
 module.exports = {
   base: '/web/',
   title: 'Xavier\'s Web notes',
@@ -8,13 +10,14 @@ module.exports = {
       {text: 'Vue', link: '/vue/'},
       {text: 'React', link: '/react/'},
       {text: 'Node', link: '/node/'},
-      {text: 'GitHub', link: 'https://github.com/XavierShi'}
     ],
     sidebar: {
-      '/common/':[
-        '',
-        '1'
-      ]
-    }
+      '/common/':common()
+    },
+    lastUpdated: '最后更新时间',
+    repo: 'xaviershi/web',
+  },
+  markdown:{
+    lineNumbers: true
   }
 }
